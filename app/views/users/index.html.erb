@@ -1,0 +1,8 @@
+<h1>all Useres</h1>
+<%@users.each do |user|%><b>
+ <%= link_to user.username ,user%></b><br>
+<%end%>
+
+<div class = "mb-3" >
+<%= link_to "Create Profile",new_user_path%>
+</div>
